@@ -1,2 +1,2 @@
 build:
-  dockerfile: ./project/Dockerfile.prod
+  dockerfile: /project/Dockerfile.prod
