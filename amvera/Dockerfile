@@ -19,11 +19,11 @@ RUN apt-get update  \
     && apt-get clean \
 
 RUN pip install --upgrade pip
-COPY ../project/requirements.txt .
+COPY /project/requirements.txt .
 RUN pip install -r requirements.txt
 RUN pip install "uvicorn[standard]==0.20.0"
 
-COPY ../project .
+COPY /project .
 
 RUN chown -R app:app $APP_HOME
 
