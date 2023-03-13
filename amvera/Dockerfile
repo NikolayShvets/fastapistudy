@@ -13,6 +13,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONBUFFERED 1
 ENV ENVIRONMENT prod
 ENV TESTING 0
+ENV PORT=80
 
 RUN apt-get update  \
     && apt-get -y install netcat gcc postgresql  \
